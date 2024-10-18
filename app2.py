@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 import sys
-# sys.path.append(r'C:/Users/kassaeif/OneDrive - Michigan State University/courses/foundations of data science/project/working directory')
+sys.path.append(r'C:/Users/kassaeif/OneDrive - Michgan State University/courses/foundations of data science/project/working directory')
 from plot_functions import plot_marriage_rates
 from plot_functions import plot_divorce_rates
 from plot_functions import plot_marriage_heat_map
