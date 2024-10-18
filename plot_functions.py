@@ -8,7 +8,7 @@ def plot_divorce_rates():
     st.write("### Divorce Rates Over Time (1990-2022)")
 
     # Load the dataset (Divorce Rates)
-    file_path = r'C:/Users/Farshid/OneDrive - Michigan State University/courses/foundations of data science/project/working directory/state-divorce-rates-90-95-00-22.xlsx'
+    file_path = r'state-divorce-rates-90-95-00-22.xlsx'
     excel_data = pd.ExcelFile(file_path)
 
     # Load the data from the sheet
@@ -54,7 +54,7 @@ def plot_marriage_rates():
         # Plot-specific code is placed entirely within this block for Option A
         st.write("### Marriage Rates Over Time (1990-2022)")
         # Load the dataset (adjust path as needed)
-        file_path = r'C:/Users/Farshid/OneDrive - Michigan State University/courses/foundations of data science/project/working directory/state-marriage-rates-90-95-00-22.xlsx'
+        file_path = r'state-marriage-rates-90-95-00-22.xlsx'
         excel_data = pd.ExcelFile(file_path)
 
         # Load the data from the sheet
@@ -101,7 +101,7 @@ def plot_marriage_heat_map():
         st.write("### Marriage Rates Heatmap (1990-2022)")
 
         # Load the dataset
-        file_path = r'C:/Users/Farshid/OneDrive - Michigan State University/courses/foundations of data science/project/working directory/state-marriage-rates-90-95-00-22.xlsx'
+        file_path = r'state-marriage-rates-90-95-00-22.xlsx'
         excel_data = pd.ExcelFile(file_path)
 
         # Load the data from the sheet
@@ -151,7 +151,7 @@ def plot_divorce_heat_map():
         st.write("### Divorce Rates Heatmap (1990-2022)")
 
         # Load the dataset (Divorce Rates)
-        file_path = r'C:/Users/Farshid/OneDrive - Michigan State University/courses/foundations of data science/project/working directory/state-divorce-rates-90-95-00-22.xlsx'
+        file_path = r'state-divorce-rates-90-95-00-22.xlsx'
         excel_data = pd.ExcelFile(file_path)
 
         # Load the data from the sheet
@@ -214,7 +214,7 @@ def plot_marriage_heat_map_year():
         }
 
         # Load the dataset
-        file_path = r'C:/Users/Farshid/OneDrive - Michigan State University/courses/foundations of data science/project/working directory/state-marriage-rates-90-95-00-22.xlsx'
+        file_path = r'state-marriage-rates-90-95-00-22.xlsx'
         excel_data = pd.ExcelFile(file_path)
 
         # Load the data from the sheet
@@ -283,7 +283,7 @@ def plot_divorce_heat_map_year():
         }
 
         # Load the dataset (Divorce Rates)
-        file_path = r'C:/Users/Farshid/OneDrive - Michigan State University/courses/foundations of data science/project/working directory/state-divorce-rates-90-95-00-22.xlsx'
+        file_path = r'state-divorce-rates-90-95-00-22.xlsx'
         excel_data = pd.ExcelFile(file_path)
 
         # Load the data from the sheet
@@ -1181,7 +1181,7 @@ def plot_imputed_marriage():
 def plot_miss_marriage():
 
         # Load the dataset
-        file_path = r'C:/Users/Farshid/OneDrive - Michigan State University/courses/foundations of data science/project/working directory/state-marriage-rates-90-95-00-22.xlsx'
+        file_path = r'state-marriage-rates-90-95-00-22.xlsx'
         excel_data = pd.ExcelFile(file_path)
 
         # Load the data from the sheet
@@ -1222,7 +1222,7 @@ def plot_miss_marriage():
 def plot_miss_divorce():
 
         # Load the dataset
-        file_path = r'C:/Users/Farshid/OneDrive - Michigan State University/courses/foundations of data science/project/working directory/state-divorce-rates-90-95-00-22.xlsx'
+        file_path = r'state-divorce-rates-90-95-00-22.xlsx'
         excel_data = pd.ExcelFile(file_path)
 
         # Load the data from the sheet
