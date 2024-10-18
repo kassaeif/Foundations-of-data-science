@@ -419,8 +419,8 @@ def plot_unemployment():
 
 def plot_gdp_vs_marriage():
     # Load both datasets
-    gdp_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\filtered_all_industry_gdp -since 2000.csv')
-    marriage_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-marriage-rates-90-95-00-22.csv')
+    gdp_data = pd.read_csv(r'filtered_all_industry_gdp -since 2000.csv')
+    marriage_data = pd.read_csv(r'state-marriage-rates-90-95-00-22.csv')
 
     # Remove unnecessary columns that might be 'Unnamed'
     gdp_data = gdp_data.loc[:, ~gdp_data.columns.str.contains('^Unnamed')]
@@ -510,8 +510,8 @@ def plot_gdp_vs_marriage():
 def plot_gdp_vs_divorce():
 
         # Load both datasets
-        gdp_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\filtered_all_industry_gdp -since 2000.csv')
-        divorce_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-divorce-rates-90-95-00-22.csv')
+        gdp_data = pd.read_csv(r'filtered_all_industry_gdp -since 2000.csv')
+        divorce_data = pd.read_csv(r'state-divorce-rates-90-95-00-22.csv')
 
         # Remove unnecessary columns that might be 'Unnamed'
         gdp_data = gdp_data.loc[:, ~gdp_data.columns.str.contains('^Unnamed')]
@@ -618,8 +618,8 @@ def plot_gdp_vs_divorce():
      
 def plot_marriage_vs_divorce():
     # Load both marriage and divorce datasets
-    marriage_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-marriage-rates-90-95-00-22.csv')
-    divorce_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-divorce-rates-90-95-00-22.csv')
+    marriage_data = pd.read_csv(r'state-marriage-rates-90-95-00-22.csv')
+    divorce_data = pd.read_csv(r'state-divorce-rates-90-95-00-22.csv')
 
     # Remove unnecessary columns that might be 'Unnamed'
     marriage_data = marriage_data.loc[:, ~marriage_data.columns.str.contains('^Unnamed')]
@@ -707,8 +707,8 @@ def plot_marriage_vs_divorce():
 
 def plot_norm_divorce_vs_marriage():
         # Load both marriage and divorce datasets
-        marriage_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-marriage-rates-90-95-00-22.csv')
-        divorce_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-divorce-rates-90-95-00-22.csv')
+        marriage_data = pd.read_csv(r'state-marriage-rates-90-95-00-22.csv')
+        divorce_data = pd.read_csv(r'state-divorce-rates-90-95-00-22.csv')
 
         # Remove unnecessary columns that might be 'Unnamed'
         marriage_data = marriage_data.loc[:, ~marriage_data.columns.str.contains('^Unnamed')]
@@ -781,8 +781,8 @@ def plot_norm_divorce_vs_marriage():
 
 def plot_norm_marriage_vs_divorce():
     # Load both marriage and divorce datasets
-    marriage_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-marriage-rates-90-95-00-22.csv')
-    divorce_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-divorce-rates-90-95-00-22.csv')
+    marriage_data = pd.read_csv(r'state-marriage-rates-90-95-00-22.csv')
+    divorce_data = pd.read_csv(r'state-divorce-rates-90-95-00-22.csv')
 
     # Remove unnecessary columns that might be 'Unnamed'
     marriage_data = marriage_data.loc[:, ~marriage_data.columns.str.contains('^Unnamed')]
@@ -869,8 +869,8 @@ def plot_norm_marriage_vs_divorce():
 
 def plot_unemp_vs_marriage():
     # Load both datasets
-    marriage_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-marriage-rates-90-95-00-22.csv')
-    unemployment_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\Unemployment in America Per US State.csv')
+    marriage_data = pd.read_csv(r'state-marriage-rates-90-95-00-22.csv')
+    unemployment_data = pd.read_csv(r'Unemployment in America Per US State.csv')
 
     # Remove unnecessary columns that might be 'Unnamed'
     marriage_data = marriage_data.loc[:, ~marriage_data.columns.str.contains('^Unnamed')]
@@ -961,8 +961,8 @@ def plot_unemp_vs_marriage():
 def plot_unemp_vs_divorce():
 
         # Load both datasets
-        divorce_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-divorce-rates-90-95-00-22.csv')
-        unemployment_data = pd.read_csv(r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\Unemployment in America Per US State.csv')
+        divorce_data = pd.read_csv(r'state-divorce-rates-90-95-00-22.csv')
+        unemployment_data = pd.read_csv(r'Unemployment in America Per US State.csv')
 
         # Remove unnecessary columns that might be 'Unnamed'
         divorce_data = divorce_data.loc[:, ~divorce_data.columns.str.contains('^Unnamed')]
@@ -1070,7 +1070,7 @@ def plot_unemp_vs_divorce():
 def plot_imputed_divorce():
 
         # Load the dataset
-        file_path = r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-divorce-rates-90-95-00-22.xlsx'
+        file_path = r'state-divorce-rates-90-95-00-22.xlsx'
         excel_data = pd.ExcelFile(file_path)
 
         # Load the data from the sheet
@@ -1126,7 +1126,7 @@ def plot_imputed_divorce():
 
 def plot_imputed_marriage():
         # Load the dataset
-        file_path = r'C:\Users\Farshid\OneDrive - Michigan State University\courses\foundations of data science\project\working directory\state-marriage-rates-90-95-00-22.xlsx'
+        file_path = r'state-marriage-rates-90-95-00-22.xlsx'
         excel_data = pd.ExcelFile(file_path)
 
         # Load the data from the sheet
