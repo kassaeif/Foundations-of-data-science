@@ -43,7 +43,7 @@ def plot_divorce_rates():
         # Filter the data based on selected states
         df_filtered = df_transposed[selected_states_divorce]
 
-        # Plotting with Plotly
+        
         fig = px.line(df_filtered, x=df_filtered.index, y=df_filtered.columns, labels={'x': 'Year', 'value': 'Divorce Rate', 'variable': 'State'}, title='Divorce Rates Over Time')
 
         # Show the plot in Streamlit
@@ -89,7 +89,7 @@ def plot_marriage_rates():
             # Filter the data based on selected states
             df_filtered = df_transposed[selected_states_marriage]
 
-            # Plotting with Plotly
+            
             fig = px.line(df_filtered, x=df_filtered.index, y=df_filtered.columns, labels={'x': 'Year', 'value': 'Marriage Rate', 'variable': 'State'}, title='Marriage Rates Over Time')
 
             # Show the plot in Streamlit
@@ -133,7 +133,7 @@ def plot_marriage_heat_map():
             # Filter the data based on selected states
             df_filtered = df.loc[selected_states_heatmap]
 
-            # Plotting with Plotly
+            
             fig = px.imshow(df_filtered, 
                             labels=dict(x="Year", y="State", color="Marriage Rate"), 
                             x=df_filtered.columns, 
@@ -183,7 +183,7 @@ def plot_divorce_heat_map():
             # Filter the data based on selected states
             df_filtered = df.loc[selected_states_heatmap]
 
-            # Plotting with Plotly
+            
             fig = px.imshow(df_filtered, 
                             labels=dict(x="Year", y="State", color="Divorce Rate"), 
                             x=df_filtered.columns, 
@@ -368,7 +368,7 @@ def plot_gdp():
             # Filter the data based on selected states
             df_filtered = gdp_long[gdp_long['GeoName'].isin(selected_states_gdp)]
 
-            # Plotting with Plotly
+            
             fig = px.line(df_filtered, x='Year', y='GDP', color='GeoName', 
                         labels={'GeoName': 'State', 'GDP': 'GDP (Millions of Current Dollars)', 'Year': 'Year'},
                         title='GDP Over Time for Selected States (All Industry)')
@@ -409,7 +409,7 @@ def plot_unemployment():
             # Filter the data based on selected states
             df_filtered = avg_unemployment_per_year[avg_unemployment_per_year['State/Area'].isin(selected_states_unemployment)]
 
-            # Plotting with Plotly
+            
             fig = px.line(df_filtered, x='Year', y='Percent (%) of Labor Force Unemployed in State/Area', color='State/Area',
                         labels={'State/Area': 'State', 'Percent (%) of Labor Force Unemployed in State/Area': 'Unemployment Percent (%)', 'Year': 'Year'},
                         title='Average Unemployment Percent Over Time for Selected States (Averaged by Year)')
