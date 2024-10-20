@@ -36,7 +36,7 @@ menu_1 = st.sidebar.selectbox(
 
 # Second dropdown menu in the sidebar for additional options
 menu_2 = st.sidebar.selectbox(
-    "Select an interactive graph",
+    "Select an interactive graph (Change the item to see graphs)",
     ["Raw Data","Missing Data", "Imputation", "Correlation", "Regression"],
     key="menu_2"
 )
