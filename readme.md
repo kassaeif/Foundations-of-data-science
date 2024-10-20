@@ -29,7 +29,7 @@ ChatGPT-4 has been used in the project for debugging and correcting the imputati
 3. **Run the Streamlit App**  
    Launch the app by running the following command in your terminal:  
    ```bash
-   streamlit run <your-app-file-name>.py
+   streamlit run app2.py
    ```
 
 ---
